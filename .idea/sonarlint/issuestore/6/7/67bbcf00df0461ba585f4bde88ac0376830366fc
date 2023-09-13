@@ -1,6 +1,8 @@
 
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†à†¤8Â„¬Ë¨1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£‘¶áûÿÿÿÿ8Â„¬Ë¨1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†à†¤8ïÜà¨1
+7
+java:S1220""Move this file to a named package.8¬‹æí¨1
 
-java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜İâœÿÿÿÿÿ8È„¬Ë¨1
-L	java:S106"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8É„¬Ë¨1
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜İâœÿÿÿÿÿ8öÜà¨1
+L	java:S106
+"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8øÜà¨1

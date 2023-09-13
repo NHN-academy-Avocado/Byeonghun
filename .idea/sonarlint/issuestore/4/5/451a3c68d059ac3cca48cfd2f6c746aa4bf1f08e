@@ -1,0 +1,9 @@
+
+Ø
+java:S1598"µThis file "Message.java" should be located in "exercise03_3_4_5_6" directory, not in "/Users/jeongbyeonghun/Desktop/ê³¼ì •1/Byeonghun/_3_DefinitionOfMethodsAndClasses/exercise03_3".(Ù¬èãøÿÿÿÿ8ˆ¥€ò¨1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù¬èãøÿÿÿÿ8¥š·ñ¨1
+G	java:S106$"+Replace this use of System.out by a logger.(Ş·å8®š·ñ¨1
+M
+java:S1068"0Remove this unused "numberToCall" private field.(Óöıå8®š·ñ¨1
+T
+java:S1068"2Remove this unused "numberOfSender" private field.(Û¹ïñşÿÿÿÿ8®š·ñ¨1
