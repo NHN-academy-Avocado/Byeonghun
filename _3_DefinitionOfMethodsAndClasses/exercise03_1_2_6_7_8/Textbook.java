@@ -12,8 +12,9 @@ public class Textbook extends Book{
     }
     @Override
     public void printBook(){
-        System.out.println(this.getTitle());
-        System.out.println(this.getAuthor());
+//        System.out.println(this.getTitle());
+//        System.out.println(this.getAuthor());
+        super.printBook();
         System.out.println(this.course);
     }
 }

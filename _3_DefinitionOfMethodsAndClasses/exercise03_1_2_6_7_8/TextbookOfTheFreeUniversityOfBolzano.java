@@ -9,9 +9,10 @@ public class TextbookOfTheFreeUniversityOfBolzano extends Textbook {
     }
     @Override
     public void printBook(){
-        System.out.println(this.getTitle());
-        System.out.println(this.getAuthor());
-        System.out.println(this.getCourse());
+//        System.out.println(this.getTitle());
+//        System.out.println(this.getAuthor());
+//        System.out.println(this.getCourse());
+        super.printBook();
         System.out.println(this.faculty);
     }
 }

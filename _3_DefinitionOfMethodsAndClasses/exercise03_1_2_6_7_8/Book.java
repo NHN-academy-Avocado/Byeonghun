@@ -41,7 +41,7 @@ public class Book {
     }
     public void setPrice(){this.price = readInput("prive : ");}
 
-    private static int readInput(String s) {
+    public static int readInput(String s) {
         return Integer.parseInt(JOptionPane.showInputDialog(s));
     }
 

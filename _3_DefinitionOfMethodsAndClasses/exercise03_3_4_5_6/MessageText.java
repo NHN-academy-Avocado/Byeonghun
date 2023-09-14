@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class MessageText {
     private String text;
     private  String code;
+
+
     public MessageText(String code, String text){
         this.code = code;
         this.text = text;
