@@ -1,3 +1,5 @@
+package _2_ObjectsAndVariables;
+
 import java.util.jar.JarOutputStream;
 import javax.swing.*;
 

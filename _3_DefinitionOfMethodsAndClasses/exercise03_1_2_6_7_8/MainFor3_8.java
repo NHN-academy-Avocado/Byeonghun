@@ -1,4 +1,4 @@
-package exercise03_1_2_6_7_8;
+package _3_DefinitionOfMethodsAndClasses.exercise03_1_2_6_7_8;
 
 public class MainFor3_8 {
     public static void main(String[] args) {
@@ -13,5 +13,6 @@ public class MainFor3_8 {
         first.setPrice(130);
         first.printBookPrice();
         System.out.println("===========================");
+
     }
 }

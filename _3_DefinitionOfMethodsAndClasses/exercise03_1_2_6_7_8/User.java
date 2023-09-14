@@ -1,4 +1,4 @@
-package exercise03_1_2_6_7_8;
+package _3_DefinitionOfMethodsAndClasses.exercise03_1_2_6_7_8;
 
 import javax.swing.*;
 

@@ -1,3 +1,5 @@
+package _2_ObjectsAndVariables;
+
 import javax.swing.*;
 
 public class Exercise02_5 {
