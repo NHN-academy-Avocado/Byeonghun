@@ -5,13 +5,13 @@ public class MainFor3_8 {
 //        Book first = new TextbookOfTheFreeUniversityOfBolzano("JAVA", "PPIPO","Programming","POPPI");
         Textbook first = new TextbookOfTheFreeUniversityOfBolzano("JAVA", "PPIPO","Programming","POPPI");
         first.printBook();
-        System.out.println("==========================");
+        System.out.println("===========================");
         Book second = new Book("coca", "cola");
         Novel third = new Novel(second.getTitle(), second.getAuthor(), "study");
         second.printBook();
-        System.out.println("==========================");
+        System.out.println("===========================");
         first.setPrice(130);
         first.printBookPrice();
-        System.out.println("==========================");
+        System.out.println("===========================");
     }
 }
