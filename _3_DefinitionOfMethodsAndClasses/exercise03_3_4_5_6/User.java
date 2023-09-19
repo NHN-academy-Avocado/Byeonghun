@@ -1,4 +1,4 @@
-package exercise03_3_4_5_6;
+package _3_DefinitionOfMethodsAndClasses.exercise03_3_4_5_6;
 
 import java.util.Scanner;
 import javax.swing.*;
