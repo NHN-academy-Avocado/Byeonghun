@@ -67,7 +67,7 @@ public class Triangle {
             return;
         }
         if (a == c) {
-            if (a > b) {
+            if (c > b) {
                 this.c = a;
                 this.b = c;
                 this.a = b;
@@ -100,14 +100,14 @@ public class Triangle {
             System.out.println("상각형이 될 수 없습니다");
             System.exit(1);
         }
-        s = (s+b+c)/2;
+        s = (s +b+c)/2;
     }
 
     public void around(){
         System.out.println(a+b+c);
     }
     public void printA(){
-        double result = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        double result = Math.sqrt(s *(s -a)*(s -b)*(s -c));
         System.out.println(result);
     }
     public void print() {

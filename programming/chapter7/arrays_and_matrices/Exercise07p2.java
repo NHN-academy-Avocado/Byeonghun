@@ -22,6 +22,6 @@ public class Exercise07p2 {
         int[] b = {2,5,7,9,3,11};
         int[] test = intersection(a,b);
         Print<Integer> p = new Print<>();
-        p.print(Arrays.stream(test).boxed().toArray(Integer[]::new));
+//        p.print(Arrays.stream(test).boxed().toArray(Integer[]::new));
     }
 }

@@ -29,7 +29,7 @@ public class Exercises_6_15 {
     }
 
     private static boolean isNotVowel(char c) {
-        return c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' && c != 'y';
+        return c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u';
     }
     public static String compression(){
         String str = JOptionPane.showInputDialog("압축하고 싶은 문장을 쓰세요");

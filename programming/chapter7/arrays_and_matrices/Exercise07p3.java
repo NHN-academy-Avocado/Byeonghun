@@ -15,9 +15,11 @@ public class Exercise07p3 {
 
     public static void main(String[] args) {
         double[][] m = {{1,1,1},{2,2,2},{3,3,3}};
+        double[][][] a = new double[3][3][3];
         double[][] test = transposeMatrix(m);
         Print<Double> p = new Print<>();
-        p.print(Arrays.stream(test).map(arr->Arrays.stream(arr).boxed().toArray(Double[]::new)).toArray(Double[][]::new));
+//        p.print(Arrays.stream(test).map(arr->Arrays.stream(arr).boxed().toArray(Double[]::new)).toArray(Double[][]::new));
+//        p.print(Arrays.stream(m).map(arr -> Arrays.stream(arr).boxed().toArray(Double[]::new)).toArray(Double[][]::new));
     }
 
 

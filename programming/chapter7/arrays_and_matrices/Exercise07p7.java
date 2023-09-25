@@ -12,6 +12,7 @@ public class Exercise07p7 {
             for (int j = 0; j < count; j++) {
                 if (a[i] == arr[j]) {
                     check = false;
+                    break;
                 }
             }
             if (check) {
@@ -25,7 +26,7 @@ public class Exercise07p7 {
 
     public static void main(String[] args) {
         int[] a = {1,2,3,4,5,1,2,3};
-        Print<Integer> p =new Print<>();
-        p.print(Arrays.stream(removeDuplicates(a)).boxed().toArray(Integer[]::new));
+//        Print<Integer> p =new Print<>();
+//        p.print(Arrays.stream(removeDuplicates(a)).boxed().toArray(Integer[]::new));
     }
 }
