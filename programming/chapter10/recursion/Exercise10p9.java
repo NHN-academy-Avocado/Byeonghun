@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Exercise10p9 {
     public static void main(String[] args) {
-        Moor8 m = new Moor8(5, 5, 0.5);
+        Moor8 m = new Moor8(4, 6, 0.4);
         Traversal8 t = new Traversal8(m);
         t.search();
         System.out.println(t);
@@ -111,15 +111,11 @@ class Traversal8 {
 
     // auxiliary methods
 
-    private static boolean traverseMoor(Moor8 m, int[] path) {
 
-        if (searchTraversal(m, m.getNumRows() / 2, m.getNumColumns() / 2, path)) return true;
-
-        return false;
-    }
     private static boolean traverseMoor(Moor8 m, int[] path, boolean[][] visited) {
-
-        if (searchTraversal(m, m.getNumRows() / 2, m.getNumColumns() / 2, path, visited)) return true;
+        for (int row = 0; row < m.getNumRows(); row++) {
+            if (searchTraversal(m, row, 0, path, visited)) return true;
+        }
 
         return false;
     }
@@ -139,27 +135,33 @@ class Traversal8 {
     }
 
     private static boolean searchTraversal(Moor8 m, int r, int c, int[] path, boolean[][] visited) {
+        if (r < 0 || r >= m.getNumRows() || c < 0 || c >= m.getNumColumns()) // 경계 검사
+            return false;
         if (!m.land(r, c) || visited[r][c])
             return false;
 
         visited[r][c] = true;
         path[c] = r;
 
-        if (c == m.getNumColumns() - 1 || c == 0 || r == 0 || r == m.getNumRows())
+        if (c == m.getNumColumns() - 1)
             return true;
 
-        return searchTraversal(m, r + 1, c - 1, path, visited) ||
-                searchTraversal(m, r + 0, c - 1, path, visited) ||
-                searchTraversal(m, r - 1, c - 1, path, visited) ||
-                searchTraversal(m, r - 1, c + 0, path, visited) ||
-                searchTraversal(m, r + 1, c + 0, path, visited) ||
-                searchTraversal(m, r - 1, c + 1, path, visited) ||
-                searchTraversal(m, r + 0, c + 1, path, visited) ||
-                searchTraversal(m, r + 1, c + 1, path, visited)
-                ;
+        // 8 방향의 변화를 나타내는 배열
+        int[] dx = {-1, 0, 1, 1, 1, 0, -1, -1};
+        int[] dy = {-1, -1, -1, 0, 1, 1, 1, 0};
+
+        for (int i = 0; i < 8; i++) {
+            int newRow = r + dx[i];
+            int newCol = c + dy[i];
+
+            if (searchTraversal(m, newRow, newCol, path, visited))
+                return true;
+        }
+        // 경로 복원
+        return false;
     }
 
     public void search() {
-        traverseMoor(moor, traversal);
+        traverseMoor(moor, traversal, visited);
     }
 }
