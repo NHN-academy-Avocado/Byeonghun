@@ -1,9 +1,9 @@
 package programming.chapter10.recursion;
 
 public class Exercise10p4 {
-    public static int gdc(int x, int y){
+    public static int gcd(int x, int y){
         if(y == 0) return x;
-        else return gdc(y, x%y);
+        else return gcd(y, x % y);
     }
     public static boolean prime(int x, int y){
         if(x == 1 || y == 1) return true;

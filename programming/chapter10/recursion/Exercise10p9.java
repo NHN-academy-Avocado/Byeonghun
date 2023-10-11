@@ -1,10 +1,11 @@
 package programming.chapter10.recursion;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Exercise10p9 {
     public static void main(String[] args) {
-        Moor8 m = new Moor8(4, 6, 0.4);
+        Moor8 m = new Moor8(5, 6, 0.5);
         Traversal8 t = new Traversal8(m);
         t.search();
         System.out.println(t);
@@ -147,8 +148,8 @@ class Traversal8 {
             return true;
 
         // 8 방향의 변화를 나타내는 배열
-        int[] dx = {-1, 0, 1, 1, 1, 0, -1, -1};
-        int[] dy = {-1, -1, -1, 0, 1, 1, 1, 0};
+        int[] dx = {-1, 0, 1, 1, -1, 0, -1, 1};
+        int[] dy = {1, 1, 1, 0, 0, -1, -1, -1};
 
         for (int i = 0; i < 8; i++) {
             int newRow = r + dx[i];
